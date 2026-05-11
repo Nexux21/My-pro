@@ -7,7 +7,12 @@ public class ejercicio6 : MonoBehaviour
     {
         int i = 0;
 
-        while (i < puntajes.Length);
+        while (i < puntajes.Length) 
+        {
+            Debug.Log("revisando puntaje :" + puntajes[1]);
+
+                i++;
+        }
         
     }
 
