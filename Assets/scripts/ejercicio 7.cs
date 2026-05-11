@@ -9,9 +9,10 @@ public class ejercicio7 : MonoBehaviour
     {
         
         int i = 0;
+        int dañototal = 1;
 
 
-        while(i < da)
+        while (i < dañototal*daños);
 
     }
 
