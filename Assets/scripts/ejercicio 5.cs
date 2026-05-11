@@ -10,13 +10,13 @@ public class ejercicio5 : MonoBehaviour
         Debug.Log("Lista de pociones:");
         int i = 0;
 
+        // Se eliminó el ";" al final de la siguiente línea
         while (i < pociones.Count)
         {
             Debug.Log("Poción encontrada: " + pociones[i]);
-            i++; 
+            i++; // Es vital que esto ocurra dentro de las llaves
         }
 
         Debug.Log("Total de pociones en el inventario: " + pociones.Count);
     }
-
 }
