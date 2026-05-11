@@ -2,22 +2,24 @@ using UnityEngine;
 
 public class ejercicio6 : MonoBehaviour
 {
-    string[] puntajes = { "16", "17","18","19","20" };
+
+    string[] puntajes = { "16", "17", "18", "19", "20" };
+
     void Start()
     {
+
         int i = 0;
 
-        while (i < puntajes.Length) 
+
+        while (i < puntajes.Length)
         {
-            Debug.Log("revisando puntaje :" + puntajes[1]);
+           
+            Debug.Log("Revisando puntaje en la posición " + i + ": " + puntajes[i]);
 
-                i++;
+  
+            i++;
         }
-        
-    }
 
-    void Update()
-    {
-        
+        Debug.Log("Fin del recorrido.");
     }
 }
