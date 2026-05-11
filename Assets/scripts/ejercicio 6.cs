@@ -9,9 +9,10 @@ public class ejercicio6 : MonoBehaviour
     {
 
         int i = 0;
+        int dañoactual = 1;
 
 
-        while (i < puntajes.Length)
+        while (i < dañoactual.Length)
         {
            
             Debug.Log("Revisando puntaje en la posición " + i + ": " + puntajes[i]);
