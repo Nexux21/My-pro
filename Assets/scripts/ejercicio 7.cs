@@ -8,6 +8,11 @@ public class ejercicio7 : MonoBehaviour
     void Start()
     {
         
+        int i = 0;
+
+
+        while(i < da)
+
     }
 
     // Update is called once per frame
