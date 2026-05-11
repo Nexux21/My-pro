@@ -18,4 +18,5 @@ public class ejercicio5 : MonoBehaviour
 
         Debug.Log("Total de pociones en el inventario: " + pociones.Count);
     }
+
 }
