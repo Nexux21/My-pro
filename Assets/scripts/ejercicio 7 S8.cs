@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class ejercicio7S8 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+  
+    string[] items = new string[] { "pokebola", "trifuerza", "llave", "death note", "pocion" };
+
     void Start()
     {
-        
+
+        foreach (string item in items)
+        {
+            Debug.Log("Buscando... Encontrado: " + item);
+
+            if (item == "llave")
+            {
+                Debug.Log("¡Llave encontrada! Deteniendo búsqueda.");
+                break; 
+            }
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+      
     }
 }
