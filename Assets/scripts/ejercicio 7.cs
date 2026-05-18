@@ -1,22 +1,28 @@
 using UnityEngine;
 
-public class ejercicio7 : MonoBehaviour
+public class Ejercicio7 : MonoBehaviour
 {
-    string[] daños = { "24", "34", "77","50","999" };
+   
+    int[] daños = { 24, 34, 77, 50, 999 };
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
         int i = 0;
-        int dañototal = 1;
+        int dañototal = 0; 
 
+        while (i < daños.Length)
+        {
+            
+            dañototal += daños[i];
 
-        while (i < dañototal*daños);
+          
+            i++;
+        }
 
+      
+        Debug.Log("El daño total recibido es: " + dañototal);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
