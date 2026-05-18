@@ -1,32 +1,43 @@
-using UnityEngine;
+using NUnit.Framework;
 using System.Collections.Generic;
-//Goku ahhhhhhhhh
-public class Ejercicio : MonoBehaviour // Nota: Es buena práctica usar Mayúscula en nombres de clase
+using UnityEngine;
+using static UnityEditor.Progress;
+
+public class ejercicio : MonoBehaviour
 {
-    public int Count = 50;
-    List<string> nombres = new List<string>() { "A", "B", "C", "D", "E" };
+
+    private List<string> nombres = new List<string>() { "Esqueleto", "orco", "Ogro", "Goblimn" };
 
     void Start()
     {
-        int i = 0;
-
-        // Quitamos el ";" y abrimos llaves
-        while (i < nombres.Count)
+        foreach (string item in nombres) 
+        
         {
-            Debug.Log(nombres[i]);
 
-            if (nombres[i] == "C")
-            {
-                Debug.Log("El elemento C se encuentra en la posicion: " + i);
-            }
+            if (item == "orco" || item == "Ogro")
+                continue;
 
-            // El incremento DEBE estar dentro del bucle
-            i++;
+            print(item);
         }
+
+   
+
+
+
+
+
+        /* for (int i = 0; i <= 10; i++) 
+         {
+             if (i == 5)
+                 break;
+
+             Debug.Log(i);
+         }*/
     }
 
+    // Update is called once per frame
     void Update()
     {
-        // Vacío por ahora
+        
     }
 }
