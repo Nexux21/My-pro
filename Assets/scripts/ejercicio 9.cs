@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BuscarItem : MonoBehaviour
+public class ejercicio9  : MonoBehaviour
 {
    
     string[] inventario = { "Poción", "Escudo de Madera", "Espada Legendaria", "Cuerda", "Casco de Hierro" };
